@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carteirinha - Jornal Kylie Cantrall</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Jornal Kylie Cantrall</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="biografia.html">Biografia</a></li>
+        <li><a href="fotos.html">Fotos</a></li>
+        <li><a href="carteirinha.html">Carteirinha</a></li>
+        <li><a href="kylia.html">Kylia</a></li>
+        <li><a href="musicas.html">Músicas</a></li>
+        <li><a href="tour.html">Tour</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="carteirinha">
+      <h2>Crie Sua Carteirinha de Fã!</h2>
+      <form id="carteirinha-form" class="carteirinha-form">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" required>
+        <span id="name-error">É obrigatório preencher este campo</span>
+
+        <label for="age">Idade:</label>
+        <input type="number" id="age" required>
+        <span id="age-error">É obrigatório preencher este campo</span>
+
+        <label for="city">Cidade/Estado:</label>
+        <input type="text" id="city" required>
+        <span id="city-error">É obrigatório preencher este campo</span>
+
+        <label for="since">Fã desde:</label>
+        <input type="text" id="since" required>
+        <span id="since-error">É obrigatório preencher este campo</span>
+
+        <label for="favoriteSong">Música preferida:</label>
+        <input type="text" id="favoriteSong" required>
+        <span id="favoriteSong-error">É obrigatório preencher este campo</span>
+
+        <button type="button" id="submitBtn">Concluído</button>
+        <span id="submit-error">Não foi possível fazer a carteirinha. Por favor, preencha todos os campos.</span>
+      </form>
+
+      <div id="result">
+        <p>Sua carteirinha foi gerada com sucesso!</p>
+        <a href="https://i.pinimg.com/736x/0f/ca/cc/0fcacc97b5cc508dc2a8d7613ad9196a.jpg" id="imageLink">
+          <img src="https://i.pinimg.com/736x/0f/ca/cc/0fcacc97b5cc508dc2a8d7613ad9196a.jpg" alt="Carteirinha do Fã">
+        </a>
+        <p>
+          "Cada fã é uma história, uma luz, cada fã é um QT's, uma parte essencial dessa jornada. 
+          Unidos pelo carinho e apoio à Kylie Cantrall, os QT's formam uma família que cresce a cada conquista. 
+          Ser QT's é acreditar no talento dela, acompanhar seus passos e vibrar juntos a cada nova realização "
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Jornal Kylie Cantrall - Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    document.getElementById('submitBtn').addEventListener('click', function() {
+      var name = document.getElementById('name').value;
+      var age = document.getElementById('age').value;
+      var city = document.getElementById('city').value;
+      var since = document.getElementById('since').value;
+      var favoriteSong = document.getElementById('favoriteSong').value;
+
+      if (name == "" || age == "" || city == "" || since == "" || favoriteSong == "") {
+        document.getElementById('submit-error').style.display = 'block';
+        document.getElementById('name-error').style.display = name == "" ? 'block' : 'none';
+        document.getElementById('age-error').style.display = age == "" ? 'block' : 'none';
+        document.getElementById('city-error').style.display = city == "" ? 'block' : 'none';
+        document.getElementById('since-error').style.display = since == "" ? 'block' : 'none';
+        document.getElementById('favoriteSong-error').style.display = favoriteSong == "" ? 'block' : 'none';
+      } else {
+        document.getElementById('carteirinha-form').style.display = 'none';
+        document.getElementById('result').style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html>
