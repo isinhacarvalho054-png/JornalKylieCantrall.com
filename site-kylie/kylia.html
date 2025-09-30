@@ -13,7 +13,6 @@
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="biografia.html">Biografia</a></li>
-                <li><a href="fotos.html">Fotos</a></li>
                 <li><a href="musicas.html">Músicas</a></li>
                 <li><a href="tour.html">Tour</a></li>
                 <li><a href="carteirinha.html">Carteirinha</a></li>
@@ -22,6 +21,11 @@
         </nav>
     </header>
 
+    <script>
+        if (performance.navigation.type === 1 && window.location.pathname !== '/index.html') {
+  window.location.href = 'index.html';
+}
+    </script>
     <main>
         <section class="kylia">
             <p>Kylie e Malia começaram a amizade muito antes de serem parceiras em cena: eram 
