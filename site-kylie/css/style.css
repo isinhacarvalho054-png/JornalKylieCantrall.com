@@ -14,7 +14,7 @@ body {
   line-height: 1.8;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
 }
 
@@ -51,12 +51,16 @@ nav ul li a:hover {
   transform: scale(1.05);
 }
 
+main {
+  flex-grow: 1;
+}
+
 section {
   padding: 60px 10%;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
   box-shadow: 0px 4px 12px rgba(0,0,0,0.05);
-  flex-grow: 1;
+  min-height: 80vh; 
 }
 
 h2 {
@@ -122,6 +126,7 @@ footer {
   padding: 30px 10px;
   font-size: 1rem;
   box-shadow: 0px -2px 8px rgba(0,0,0,0.05);
+  margin-top: auto;
 }
 
 footer p {
@@ -232,6 +237,22 @@ footer p {
 }
 
 .musicas h2 {
+  color: #ee0430;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  border-left: 5px solid #f6264d;
+  padding-left: 15px;
+}
+
+.aviso {
+  padding: 60px 10%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.05);
+  min-height: 80vh;
+}
+
+.aviso h1 {
   color: #ee0430;
   margin-bottom: 30px;
   font-size: 2.2rem;
