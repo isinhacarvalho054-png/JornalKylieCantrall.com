@@ -6,14 +6,12 @@
     <title>Biografia - Kylie Cantrall</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
     <header>
         <h1>Biografia de Kylie Cantrall</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="biografia.html">Biografia</a></li>
-                <li><a href="fotos.html">Fotos</a></li>
                 <li><a href="musicas.html">Músicas</a></li>
                 <li><a href="tour.html">Tour</a></li>
                 <li><a href="carteirinha.html">Carteirinha</a></li>
@@ -22,6 +20,11 @@
         </nav>
     </header>
 
+    <script>
+        if (performance.navigation.type === 1 && window.location.pathname !== '/index.html') {
+  window.location.href = 'index.html';
+}
+    </script>
     <main>
         <section class="biografia">
             <p>Kylie Lorena Cantrall, ou conhecida apenas como Kylie Cantrall, 
