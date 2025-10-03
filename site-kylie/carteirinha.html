@@ -35,7 +35,7 @@
             <br>
    
             <label for="age">Idade:</label>
-            <input type="number" id="age" required>
+            <input type="number" id="age" required min="0">
             <span id="age-error" style="color: red; display: none;">É obrigatório preencher este campo</span>
             <br>
    
@@ -59,8 +59,8 @@
         </form>
         <div id="result" style="display:none;">
         <p>Sua carteirinha foi gerada com sucesso!</p>
-            <a href="https://i.pinimg.com/736x/0f/ca/cc/0fcacc97b5cc508dc2a8d7613ad9196a.jpg" id="imageLink">
-                <img src="https://i.pinimg.com/736x/0f/ca/cc/0fcacc97b5cc508dc2a8d7613ad9196a.jpg" alt="Carteirinha do Fã">
+            <a href="https://i.pinimg.com/736x/b7/ca/df/b7cadf5bd7148f614917a0800211bbf7.jpg" id="imageLink">
+                <img src="https://i.pinimg.com/736x/b7/ca/df/b7cadf5bd7148f614917a0800211bbf7.jpg" alt="Carteirinha do Fã">
             </a>
         <p>
           "Cada fã é uma história, uma luz, cada fã é um QT's, uma parte essencial dessa jornada. 
@@ -75,7 +75,7 @@
     <p>&copy; 2025 Jornal Kylie Cantrall - Todos os direitos reservados.</p>
   </footer>
 
-    <script>
+     <script>
   document.getElementById('submitBtn').addEventListener('click', function() {
   var name = document.getElementById('name').value;
   var age = document.getElementById('age').value;
@@ -119,6 +119,7 @@
     document.getElementById('result').style.display = 'block';
   }
 });
-    </script>
+
+</script>
 </body>
 </html>
