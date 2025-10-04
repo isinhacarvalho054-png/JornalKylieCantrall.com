@@ -184,10 +184,27 @@ footer p {
   margin-bottom: 20px;
 }
 
-@media (max-width: 480px) {
-  nav ul {
-    font-size: 14px;
-  }
+.musicas ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.musicas li {
+  margin-bottom: 10px;
+}
+
+.musicas b {
+  font-weight: bold;
+  color: #fdfdfd;
+}
+
+.musicas h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  border-left: 5px solid #f6264d;
+  padding-left: 15px;
 }
 
 .container {
@@ -222,36 +239,18 @@ footer p {
   display: none;
 }
 
-.musicas ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.musicas li {
-  margin-bottom: 10px;
-}
-
-.musicas b {
-  font-weight: bold;
-  color: #fdfdfd;
-}
-
-.musicas h2 {
-  color: #ffffff;
-  margin-bottom: 30px;
-  font-size: 2.2rem;
-  border-left: 5px solid #f6264d;
-  padding-left: 15px;
-}
-
 @media (max-width: 480px) {
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
   header h1 {
     font-size: 2rem;
-  }
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
   }
   section {
     padding: 20px 5%;
