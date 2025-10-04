@@ -19,6 +19,13 @@ body {
   font-weight: bold;
 }
 
+@media (max-width: 768px) {
+  body {
+    background-size: auto 100%;
+    background-position: center;
+  }
+}
+
 header {
   background: linear-gradient(90deg, #ee0430, #f6264d);
   color: #fff;
