@@ -8,7 +8,7 @@ body {
   font-family: "Poppins", Arial, sans-serif;
   background-image: url('https://i.pinimg.com/736x/cb/e2/c9/cbe2c9fe2452aeba4d0a1034893f5aef.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: 40% center;
   background-attachment: fixed;
   color: #000;
   line-height: 1.8;
@@ -21,8 +21,8 @@ body {
 
 @media (max-width: 768px) {
   body {
-    background-size: auto 100%;
-    background-position: center;
+    background-size: 100% auto;
+    background-position: 40% center;
   }
 }
 
