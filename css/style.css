@@ -19,39 +19,6 @@ body {
   font-weight: bold;
 }
 
-@media (max-width: 480px) {
-  body {
-    background-size: 100% auto;
-    background-position: center;
-  }
-  
-  header {
-    padding: 10px 0;
-  }
-  
-  header h1 {
-    font-size: 20px;
-  }
-  
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-  }
-  
-  nav ul li {
-    margin-bottom: 10px;
-  }
-  
-  section {
-    padding: 10px 5%;
-  }
-  
-  #result img {
-    width: 80%;
-  }
-}
-
 header {
   background: linear-gradient(90deg, #ee0430, #f6264d);
   color: #fff;
@@ -83,6 +50,27 @@ nav ul li a {
 nav ul li a:hover {
   color: #fad9d8;
   transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px 0;
+  }
+  
+  header h1 {
+    font-size: 20px;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 0;
+  }
+  
+  nav ul li {
+    margin-bottom: 10px;
+  }
 }
 
 main {
