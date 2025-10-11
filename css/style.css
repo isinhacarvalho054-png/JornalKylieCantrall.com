@@ -248,9 +248,10 @@ footer p {
 /* ----- Ajustes para celular ----- */
 @media (max-width: 480px) {
   body {
-    background-position: center top;
-    background-size: cover;
-    background-attachment: scroll;
+    background-image: url('https://i.pinimg.com/736x/cb/e2/c9/cbe2c9fe2452aeba4d0a1034893f5aef.jpg');
+    background-position: center 25%; /* ajusta verticalmente para o rosto aparecer */
+    background-size: cover;          
+    background-attachment: scroll;   
   }
 
   nav ul {
