@@ -19,11 +19,27 @@ body {
   font-weight: bold;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   body {
-    background-size: 150% auto;
+    background-size: cover;
     background-position: 40% 30%;
     background-attachment: scroll;
+  }
+  
+  header {
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    font-size: 24px;
+  }
+  
+  section {
+    padding: 20px 5%;
+  }
+  
+  #result img {
+    width: 80%;
   }
 }
 
@@ -245,28 +261,4 @@ footer p {
   color: red;
   font-size: 14px;
   display: none;
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-  header h1 {
-    font-size: 2.5rem;
-  }
-  nav ul {
-    gap: 20px;
-  }
-  section {
-    padding: 40px 10%;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  header h1 {
-    font-size: 3rem;
-  }
-  nav ul {
-    gap: 30px;
-  }
-  section {
-    padding: 60px 15%;
-  }
 }
