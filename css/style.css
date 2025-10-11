@@ -19,42 +19,13 @@ body {
   font-weight: bold;
 }
 
-/* Estilos para dispositivos móveis */
 @media (max-width: 480px) {
   body {
-    background-size: cover;
+    background-size: 150% auto;
     background-position: 40% 30%;
-  }
-  
-  header {
-    padding: 20px 0;
-  }
-  
-  header h1 {
-    font-size: 2rem;
-  }
-  
-  nav ul {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  nav ul li a {
-    font-size: 16px;
-  }
-  
-  section {
-    padding: 20px 5%;
-  }
-  
-  #result img {
-    width: 80%;
+    background-attachment: scroll;
   }
 }
-
-/* Resto do código... */
 
 header {
   background: linear-gradient(90deg, #ee0430, #f6264d);
