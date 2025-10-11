@@ -8,7 +8,7 @@ body {
   font-family: "Poppins", Arial, sans-serif;
   background-image: url('https://i.pinimg.com/736x/cb/e2/c9/cbe2c9fe2452aeba4d0a1034893f5aef.jpg');
   background-size: cover;
-  background-position: 40% center;
+  background-position: center;
   background-attachment: fixed;
   color: #000;
   line-height: 1.8;
@@ -19,9 +19,9 @@ body {
   font-weight: bold;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   body {
-    background-position: 50% 30%;
+    background-position: 40% 30%;
   }
 }
 
@@ -185,7 +185,7 @@ footer p {
 }
 
 #result img {
-  width: 50%;
+  width: 80%;
   border-radius: 10px;
   margin-bottom: 20px;
 }
@@ -245,45 +245,13 @@ footer p {
   display: none;
 }
 
-/* ----- Ajustes para celular ----- */
-@media (max-width: 480px) {
-  body {
-    background-image: url('https://i.pinimg.com/736x/cb/e2/c9/cbe2c9fe2452aeba4d0a1034893f5aef.jpg');
-    background-position: center top;
-    background-size: contain;         
-    background-repeat: no-repeat;     
-    background-attachment: scroll;    
-  }
-
-  nav ul {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  nav ul li a {
-    font-size: 16px;
-  }
-
-  header h1 {
-    font-size: 2rem;
-  }
-
-  section {
-    padding: 20px 5%;
-  }
-}
-
 @media (min-width: 481px) and (max-width: 768px) {
   header h1 {
     font-size: 2.5rem;
   }
-
   nav ul {
     gap: 20px;
   }
-
   section {
     padding: 40px 10%;
   }
@@ -293,12 +261,28 @@ footer p {
   header h1 {
     font-size: 3rem;
   }
-
   nav ul {
     gap: 30px;
   }
-
   section {
     padding: 60px 15%;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  section {
+    padding: 20px 5%;
   }
 }
