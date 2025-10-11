@@ -19,11 +19,42 @@ body {
   font-weight: bold;
 }
 
+/* Estilos para dispositivos móveis */
 @media (max-width: 480px) {
   body {
+    background-size: cover;
     background-position: 40% 30%;
   }
+  
+  header {
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  nav ul li a {
+    font-size: 16px;
+  }
+  
+  section {
+    padding: 20px 5%;
+  }
+  
+  #result img {
+    width: 80%;
+  }
 }
+
+/* Resto do código... */
 
 header {
   background: linear-gradient(90deg, #ee0430, #f6264d);
@@ -185,7 +216,7 @@ footer p {
 }
 
 #result img {
-  width: 80%;
+  width: 50%;
   border-radius: 10px;
   margin-bottom: 20px;
 }
@@ -266,23 +297,5 @@ footer p {
   }
   section {
     padding: 60px 15%;
-  }
-}
-
-@media (max-width: 480px) {
-  nav ul {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-  nav ul li a {
-    font-size: 16px;
-  }
-  header h1 {
-    font-size: 2rem;
-  }
-  section {
-    padding: 20px 5%;
   }
 }
