@@ -21,8 +21,7 @@ body {
 
 @media (max-width: 768px) {
   body {
-    background-size: 100% auto;
-    background-position: 40% center;
+    background-position: 50% 30%;
   }
 }
 
